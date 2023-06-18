@@ -13,7 +13,7 @@ int main(void)
 		{
 			for (z = 58; z <= 147; z++)
 			{
-				if ((x + y) < z && (x y) != z)
+				if ((x + y) < z && (x, y) != z)
 				{
 					putchar(x);
 					putchar(y);
