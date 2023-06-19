@@ -13,14 +13,14 @@ int main(void)
 	{
 		for (m = 48; m < 57; m++)
 		{
-			for (l = 48; l < 57; l++)
+			for (l = 48; l =< 57; l++)
 			{
-				if (l > m > k)
+				if (l > m && m > k && l > k)
 				{
 				putchar(k);
 				putchar(m);
 				putchar(l);
-					if (k != 55 && m != 56 && l != 57)
+					if (k != 55 || m != 56 || l != 57)
 					{
 					putchar(',');
 					putchar(' ');
