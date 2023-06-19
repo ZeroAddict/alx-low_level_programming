@@ -4,7 +4,9 @@
 */
 int main(void)
 {
-	int k, m, l;
+	int k;
+	int m;
+	int l;
 
 	for (k = 48; k < 57; k++)
 	{
