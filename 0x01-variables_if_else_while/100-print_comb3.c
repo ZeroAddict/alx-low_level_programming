@@ -18,6 +18,7 @@ int main(void)
 				putchar(j);
 				if (m != 56 || j != 57)
 				putchar(',');
+				if (m != 56 || j != 57)
 				putchar(' ');
 			}
 		}
