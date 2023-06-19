@@ -11,17 +11,21 @@ int main(void)
 	{
 		for (y = 48; y < 58; y++)
 		{
-			for (z = 59; z <= 148; z++)
-			{
-				if ((x + y) < z)
-					if ((x * 10 + y) && (y * 10 + x) != z)
+			for (j = 48; j <= 58; j++)
+			{	
+				for (z = 48; z <= 58; z++)
 				{
-					putchar(x);
-					putchar(y);
-					putchar(' ');
-					putchar(z);
-					putchar(',');
-					putchar(' ');
+					if ((x + y) < z)
+						if ((x * 10 + y) && (y * 10 + x) != z)
+						{
+						putchar(x);
+						putchar(y);
+						putchar(' ');
+						putchar(j);
+						putchar(z);
+						putchar(',');
+						putchar(' ');
+						}
 				}
 			}
 		}
