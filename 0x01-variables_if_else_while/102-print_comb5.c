@@ -7,14 +7,14 @@ int main(void)
 {
 	int x, y, z;
 
-	for (x = 48; x < 57; x++)
+	for (x = 48; x < 58; x++)
 	{
-		for (y = 48; y < 57; y++)
+		for (y = 48; y < 58; y++)
 		{
-			for (z = 58; z <= 147; z++)
+			for (z = 59; z <= 148; z++)
 			{
 				if ((x + y) < z)
-					if ((x * 10 + y) || (y * 10 + x) != z))
+					if ((x * 10 + y) && (y * 10 + x) != z)
 				{
 					putchar(x);
 					putchar(y);
