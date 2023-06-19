@@ -14,9 +14,9 @@ int main(void)
 			{
 				if (l > m && m > k)
 				{
-					putchar(k);
-					putchar(m);
-					putchar(1);
+				putchar(k);
+				putchar(m);
+				putchar(1);
 					if (k != 55 || m != 56)
 					{
 					putchar(',');
