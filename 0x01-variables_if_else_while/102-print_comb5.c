@@ -13,10 +13,8 @@ int main(void)
 		{
 			for (z = 58; z <= 147; z++)
 			{
-				if
-					((x + y) < z)
-					if
-						((x * 10 + y) || (y * 10 + x) != z))
+				if ((x + y) < z)
+					if ((x * 10 + y) || (y * 10 + x) != z))
 				{
 					putchar(x);
 					putchar(y);
