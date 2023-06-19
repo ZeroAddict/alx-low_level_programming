@@ -5,14 +5,14 @@
 */
 int main(void)
 {
-	int x, y, z;
+	int x, y, z, j;
 
 	for (x = 48; x < 58; x++)
 	{
 		for (y = 48; y < 58; y++)
 		{
 			for (j = 48; j <= 58; j++)
-			{	
+			{
 				for (z = 48; z <= 58; z++)
 				{
 					if ((x + y) < z)
