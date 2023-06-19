@@ -16,6 +16,7 @@ int main(void)
 			{
 				putchar(m);
 				putchar(j);
+				if (m != 56 && j != 57)
 				putchar(',');
 				putchar(' ');
 			}
