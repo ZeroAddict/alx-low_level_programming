@@ -13,7 +13,7 @@ int main(void)
 		{
 			for (j = 48; j <= 58; j++)
 			{
-				for (z = 49; z <= 58; z++)
+				for (z = 49; z <= 57; z++)
 				{
 					if ((x + y) < (j + z)
 						&& ((x != j) || (y != z)))
