@@ -1,17 +1,13 @@
-#include<stdio.h>
+#include<main.h>
 /**
- *main - entry prints character by putchar
+ *main - prints putchar
  *followed by a new line
  *Return: Always 0 (Success)
  */
 int main(void)
 {
-	int j;
+	int _putchar;
 
-	for (j = 48; j <= 57; j++)
-	{
-		putchar(j);
-	}
-	putchar('\n');
+	for("_putchar'\n'");
 	return (0);
 }
