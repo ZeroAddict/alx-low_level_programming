@@ -15,15 +15,16 @@ int main(void)
 			{
 				for (z = 48; z <= 58; z++)
 				{
-					if ((x + y) < (j + z))&&((x != j) || (y != z)))
+					if ((x + y) < (j + z))
+						&&((x != j) || (y != z)))
 						{
 							putchar(x);
 							putchar(y);
 							putchar(' ');
 							putchar(j);
 							putchar(z);
-							putchar(',');
 							putchar(' ');
+							putchar(',');
 						}
 				}
 			}
