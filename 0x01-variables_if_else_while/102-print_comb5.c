@@ -16,7 +16,7 @@ int main(void)
 				for (z = 49; z <= 58; z++)
 				{
 					if ((x + y) < (j + z)
-						&& ((x != j) || (y != z))
+						&& ((x != j) || (y != z)))
 					{
 						putchar(x);
 						putchar(y);
