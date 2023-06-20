@@ -1,4 +1,4 @@
-#include<stdio.h>
+#include<main.h>
 /**
  *main - entry prints character by putchar
  *followed by a new line
