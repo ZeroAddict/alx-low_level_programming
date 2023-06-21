@@ -1,13 +1,6 @@
-#ifdef PROTOTYPE-IMP_MAIN_HEADER
-#define PROTOTYPE-IMP_MAIN_HEADER
+#ifndef MAIN_H
+#define MAIN_H
 
-int main (int argc, int *argv[]);
-        
-#endif /* PROTOTYPE_IMP_H */
+int _putchar(void);
 
-#ifndef PROTOTYPE-IMP_PUTCHAR_HEADER
-#define PROTOTYPE-IMP_PUTCHAR_HEADER
-
-int _putchar(int c);
-
-#endif /* PROTOTYPE-IMP_PUTCHAR_HEADER */
+#endif

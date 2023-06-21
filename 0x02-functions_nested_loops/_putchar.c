@@ -1,5 +1,13 @@
 #include "main.h"
+#include <unstdio.h>
+/**
+ * function _putchar prints _putchar as a std output
+ *
+ * Return: 0 Success 
+ * error: return 1 
+ */
 
-int _putchar(int c) {
-return _putchar;
+int _putchar(void)
+{
+return (0,1);
 }
