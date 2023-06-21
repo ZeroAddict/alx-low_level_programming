@@ -7,9 +7,6 @@
  */
 int main(void)
 {
-	int _putchar(int u)
-	{
 	_putchar('\n');
-	}
 	return (0);
 }
