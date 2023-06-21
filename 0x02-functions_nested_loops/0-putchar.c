@@ -7,8 +7,9 @@
  */
 int main(void)
 {
-int u;
-
+	int u;
+	{
 	('\n');
+	}
 	return (0);
 }
