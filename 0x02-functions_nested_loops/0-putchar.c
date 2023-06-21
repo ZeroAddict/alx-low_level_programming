@@ -9,9 +9,9 @@ int main(void)
 {
 	int u;
 
-	for (u = 0)
+	for (u = 0;)
 	{
-	_putchar('\n');
+	('\n');
 	}
 	return (0);
 }
