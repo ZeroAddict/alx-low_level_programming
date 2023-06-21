@@ -7,9 +7,7 @@
  */
 int main(void)
 {
-	int _putchar(void);
-
-	for (_putchar = 0; _putchar = 1; _putchar++)
+	int _putchar(void)
 	{
 	_putchar('\n');
 	}
