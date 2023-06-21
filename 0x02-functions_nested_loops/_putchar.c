@@ -7,7 +7,7 @@
  * error: return 1 
  */
 
-int _putchar(void)
+int _putchar(char c)
 {
-return (0,1);
+return (write(0,&c,1));
 }
