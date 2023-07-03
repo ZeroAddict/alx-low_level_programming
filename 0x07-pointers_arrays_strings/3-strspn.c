@@ -7,6 +7,7 @@
  * @accept: input character
  * Return: Always 0 (Success)
  */
+
 unsigned int _strspn(char *s, char *accept)
 {
 	unsigned int i, n, value, check;
@@ -28,5 +29,5 @@ unsigned int _strspn(char *s, char *accept)
 		if (check == 1)
 			break;
 	}
-	return value;
+	return (value);
 }
