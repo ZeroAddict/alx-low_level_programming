@@ -1,21 +1,21 @@
 #include "main.h"
 
 /**
-* *_strcpy - copies the string pointed to by character pointer srz
-* @srz: char type string
-* @first: char type string serves as destination
-* String *srz points to is copied into the buffer pointed at by *first
-* Return: pointer to first
+* *_strcpy - copies the string pointed to by character pointer src
+* @src: char type string
+* @dest: char type string serves as destination
+* String *src points to is copied into the buffer pointed at by *dest
+* Return: pointer to dest
 */
 
-char *_strcpy(char *first, char *srz)
+char *_strcpy(char *dest, char *src)
 {
 	int x = -1;
 
 	do {
 		x++;
-		first[x] = srz[x];
-	} while (srz[x] != '\0');
+		dest[x] = src[x];
+	} while (src[x] != '\0');
 
-	return (first);
+	return (dest);
 }
