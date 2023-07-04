@@ -7,21 +7,19 @@
  */
 void puts_half(char *str)
 {
-	int w_string, h_string;
+	int w_string, h_string, i;
 
 	w_string = 0;
 	while (str[w_string] != '\0')
 		w_string++;
+
 	h_string = w_string / 2;
 
-	if (w_string % 2 == 1i)
+	if (w_string % 2 != 0)
 		h_string++;
 		/*since half string is < whole*/
 
-	while (h_string < w_string)
-	{
-		puts_half(s[h_string]);
-		h_string++
-	}
-	putchar('\0');
+	for (i = h_string; i < w_string; i++)
+		putchar(str[i]);
+	putchar('\n');
 }
