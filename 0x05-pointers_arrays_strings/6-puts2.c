@@ -18,19 +18,20 @@ int main(void)
 
 /**
  * puts2 - prints characters of a string
- * @str: the used string reference
+ * @s: the used string reference
  * Return: void
  */
 void puts2(char *s)
 {
-    int z = 0;
-    while (s[z] != '\0')
-    {
-        if (z % 2 == 0)
-        {
-            _putchar(s[z]);
-        }
-        z++;
-    }
-    _putchar('\n');
+	int z = 0;
+
+	while (s[z] != '\0')
+	{
+		if (z % 2 == 0)
+		{
+			_putchar(s[z]);
+		}
+		z++;
+	}
+	_putchar('\n');
 }

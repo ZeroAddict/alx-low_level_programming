@@ -6,9 +6,10 @@
  *Return: string, new line
  */
 
- void _puts(char *str)
- {
+void _puts(char *str)
+{
 	int a = 0;
+
 	while (str[a])
 	{
 		_putchar(str[a]);
