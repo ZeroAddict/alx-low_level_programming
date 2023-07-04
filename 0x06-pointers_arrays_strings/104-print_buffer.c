@@ -28,7 +28,7 @@ void print_buffer(char *b, int size)
 			if (i < j)
 				printf("%02x", *(b + m + i));
 			else
-				printf("  ");
+				printf(" ");
 			if (i % 2)
 			{
 				printf(" ");
@@ -42,7 +42,7 @@ void print_buffer(char *b, int size)
 			{
 				a = '.';
 			}
-			printf("%a", a);
+			printf("%d", a);
 		}
 		printf("\n");
 		m += 10;
