@@ -2,10 +2,11 @@
 
 /**
  * main - check the code
+ * @print_to_98: prints natural numbers from n to 99
  *
  * Return: Always 0.
  */
-int main(void)
+int main()
 {
     print_to_98(0);
     print_to_98(98);
