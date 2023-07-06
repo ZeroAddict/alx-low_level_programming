@@ -13,7 +13,7 @@ int _length(char *s)
 /**
  *checkpali - checks if input string is a palindrome
  *@i: i is the index character
- *@strlen: is the length of the string 
+ *@strlen: is the length of the string
  *@s: is the string
  *Return: 1 if string is a palindrome, 0 if not
  */
@@ -27,7 +27,7 @@ int checkpali(int i, int strlen, char *s)
 		}
 		else if (s[i] != s[strlen])
 		{
-			return (0);	
+			return (0);
 		}
 		else
 			return (1);

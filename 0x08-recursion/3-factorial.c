@@ -1,7 +1,7 @@
 #include "main.h"
 /**
- *_factorial - returns factorial of a number
- @n: number argument for factorial function
+ *factorial - returns factorial of a number
+ *@n: number argument for factorial function
  *
  *Return: factorial of n
  * Return -1 if n < 0 errno -1

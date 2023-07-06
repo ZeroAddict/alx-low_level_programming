@@ -24,13 +24,14 @@ int helperfunction(int num, int i)
 }
 
 /**
+ *_is_prime_number - checks the number of factors of n
+ *@n: number whose of factors is checked
  *
- *
- *0 if number is not prime
+ *Return: 0 if number is not prime, 1 if prime
  */
-int is_prime_number(int n)
+int _is_prime_number(int n)
 {
-	if ( n <= 1)
+	if (n <= 1)
 	{
 		return (0);
 	}
