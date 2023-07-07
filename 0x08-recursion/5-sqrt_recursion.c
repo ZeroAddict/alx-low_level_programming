@@ -16,7 +16,7 @@ int helperfunction(int n, int sqrt)
 		if ((sqrt * sqrt) > n)
 			return (-1);
 		else
-			return (helperfunctiom(n, sqrt + 1));
+			return (helperfunction(n, sqrt + 1));
 	}
 }
 
