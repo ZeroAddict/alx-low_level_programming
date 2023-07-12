@@ -2,10 +2,9 @@
 #include <stdlib.h>
 
 /**
-* create_array: function creates an array of chars, and initializes with a char
-* @size - the memory space determined by array size
-* @c - character to be assigned and created by function
-* Description: function takes memory address, and assigns c as stdout
+* create_array - function creates an array of chars
+* @size: the memory space determined by array size
+* @c: character to be assigned and created by function
 * Return: pointer to array Success, NULL on failure & if size = 0
 */
 
