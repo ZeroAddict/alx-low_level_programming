@@ -4,7 +4,6 @@
 /**
 *_strdup: returns a pointer to newstring
 * @str: pointer variable that is pointed to by function as duplicate
-* Description - malloc obtains and duplicates memory new string
 * Return: NULL if str = NULL, and memory is insufficient
 */
 
