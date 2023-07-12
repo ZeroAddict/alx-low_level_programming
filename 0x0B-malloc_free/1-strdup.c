@@ -1,13 +1,14 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "main.h"
+#include <string.h>
 /**
-*_strdup: returns a pointer to newstring
+*_strdup - returns a pointer to newstring
 * @str: pointer variable that is pointed to by function as duplicate
 * Return: NULL if str = NULL, and memory is insufficient
 */
 
-char *_strdup(char *str);
+char *_strdup(char *str)
 {
 	char *strn;
 	int size;
@@ -18,15 +19,16 @@ char *_strdup(char *str);
 	{
 		return (NULL);
 	}
-	else if
-	for (strn = malloc(size * sizeof(char))) /*maemory allocation to strn*/
+
+	strn = malloc(size * sizeof(char)); /*maemory allocation to strn*/
 	{
-		if strn == NULL;
+		if (strn == NULL)
 		return (NULL);	/*Memory allocation failed insufficient memory size*/
 		{
 			strcpy(strn, str); /*Copy string(str) into newly strn*/
 			return (strn);
 		}
+	}		
 	free(str); /*frees memory after assignment and allocation*/
-	return (0);
+	return (str);
 }
