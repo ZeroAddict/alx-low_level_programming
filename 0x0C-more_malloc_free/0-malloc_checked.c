@@ -10,7 +10,7 @@
 *Return: v, exit status 98 if allocation by malloc_checked fails
 */
 
-void *malloc_checked(unsigned int b);
+void *malloc_checked(unsigned int b)
 {
 	unsigned int *v;
 
