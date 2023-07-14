@@ -6,7 +6,6 @@
  *alloc_grid - returns a pointer to a 2D array
  *@width: number of rows of grid
  *@height: number of height of grid
- *@grid: pointer for casting 2 diimensional grid
  *
  *Return: NULL on failure if w or h <= 0, return NULL
  */
@@ -21,17 +20,20 @@ int **alloc_grid(int width, int height)
 
 	grid = malloc(width * sizeof(int *)); /*typecasting malloc to grid*/
 	if (grid == NULL)
-		return (NULL);
-	
-	for (i = 0; i < width; i++) /*initializing grid's allocated memory across columns*/
+		return (NULL);	
+	for (i = 0; i < width; i++) /*initializing 
+				      *grid's allocated memory across columns*/
 	{
-		grid[i] = malloc(height * sizeof(int)); /*allocates memory for column elements*/
+		grid[i] = malloc(height * sizeof(int)); 
+		/*allocates memory for column elements*/
 		if (grid[i] == NULL)
 		{
 			for (j = 0; j < i; j++)
 			{
-				free(grid[j]); /*frees formerly allocated column element if allocation fail*/
+				free(grid[j]); /*frees formerly allocated column element
+						 if allocation fails*/
 			}
+			free(grid[i]);
 			free(grid); /*entire grid freed*/
 			return (NULL);
 		}
