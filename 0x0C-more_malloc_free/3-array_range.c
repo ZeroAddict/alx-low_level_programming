@@ -6,7 +6,7 @@
 /**
 * *array_range - creates an array (int)
 * @min: minimum range of values kept in array
-* @max: maximum range kept 
+* @max: maximum range kept
 *
 *Return:v Always on success
 * v is pointer to new array
@@ -20,16 +20,16 @@ int *array_range(int min, int max)
 	{
 		return (NULL);
 	}
-	size = max - (min + 1);
-	ptr = malloc(sizeof(int) * size);
+	size = max - min + 1;
+	v = malloc(sizeof(int) * size);
 
 	if (v == NULL)
 	{
 		return (NULL);
 	}
-	for (k = 0; min <= max; k++)
+	for (k = 0; k < size; k++)
 	{
-		v[k] = min++;
+		v[k] = min + k;
 	}
 	return (v);
 }

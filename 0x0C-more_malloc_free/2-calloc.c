@@ -6,8 +6,8 @@
 /**
 * _memset - assigns memory for an array element
 * @v: pointer variable to array
-* @c: character element position in array 
-*
+* @c: character element position in array
+* @n: memset parameter
 *Return:v Always on success
 */
 
@@ -24,10 +24,10 @@ char *_memset(char *v, char c, unsigned int n)
 
 /**
 * _calloc - function allocates memory for an array using malloc
-* @nmemb: position in array 
+* @nmemb: position in array
 * @size: unsigned int size of an element in array
 *
-*Return: NULL if nmemb or size = 0, if malloc fails NULL 
+*Return: NULL if nmemb or size = 0, if malloc fails NULL
 *if NULL '\0' is passed, treat as ""
 */
 void *_calloc(unsigned int nmemb, unsigned int size)
@@ -36,7 +36,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 
 	if (nmemb == 0 || size == 0)
 		return (NULL);
-	ptr = malloc(nmemb * (size)(unsigned int));
+	ptr = malloc(nmemb * size);
 	if (ptr == NULL)
 		return (NULL);
 	_memset(ptr, 0, nmemb * size);
