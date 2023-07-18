@@ -47,14 +47,13 @@ char *_strcpy(char *first, char *src)
 */
 dog_t *new_dog(char *name, float age, char *owner)
 {
-	*dog_t new_d;
-
 	if (name == NULL || owner == NULL || age < 0)
 	{
 		return (NULL);
 	}
+	dog_t *new_d;
 
-	new_d = (dog_t *)malloc(sizeof(dog_t));
+	new_d = malloc(sizeof(dog_t));
 	if (new_d == NULL)
 	{
 		free(new_d);
