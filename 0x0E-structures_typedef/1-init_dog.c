@@ -2,7 +2,6 @@
 #include "dog.h"
 
 /**
-*struct dog - initialized struct type for members
 *init_dog - function initializes struct
 *@d: void pointer variable
 *@name: character variable for name
