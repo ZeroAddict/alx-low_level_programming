@@ -47,7 +47,7 @@ char *_strcpy(char *first, char *src)
 */
 dog_t *new_dog(char *name, float age, char *owner)
 {
-	struct dog *new_d = NULL;
+	dog_t *new_d = NULL;
 
 	if (name == NULL || owner == NULL || age < 0)
 	{
