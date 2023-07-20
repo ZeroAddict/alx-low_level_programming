@@ -27,7 +27,7 @@ int op_add(int a, int b)
 int op_sub(int a, int b)
 {
 	return (a - b);
-} 
+}
 /**
 *op_mul - multiplies a and b
 *@a: integer a  num1
@@ -52,7 +52,7 @@ int op_div(int a, int b)
 }
 /**
 *op_mod - returns remainder of a by b division
-*@a: integer a - num1 
+*@a: integer a - num1
 *@b: integer b - num2
 *
 *Return: modulus remainder of a / b
