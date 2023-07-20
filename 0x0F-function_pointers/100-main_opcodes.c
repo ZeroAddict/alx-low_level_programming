@@ -11,7 +11,7 @@ int main(int argc, char *argv[])
 {
 	int num_of_bytes;
 	char *arr;
-	
+
 	if (argc != 2)
 	{
 		printf("Error\n");
@@ -25,12 +25,12 @@ int main(int argc, char *argv[])
 		exit(2);
 	}
 	unsigned int i;
-	
+
 	arr = (char *)main;
 	for (i = 0; i < num_of_bytes - 1; i++)
-		{
-			printf("%02hhx ", arr[i]);
-		}
+	{
+		printf("%02hhx ", arr[i]);
+	}
 	printf("%02hhx\n", arr[i]);
 	return (0);
 }
