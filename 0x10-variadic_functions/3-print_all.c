@@ -7,19 +7,17 @@
 *@...: variadic argument variable number of arguments
 *Return: void
 */
-
 void print_all(const char * const format, ...)
 {
 	int i;
 	int case_restart;
 	char *str;
-
 	va_list list;
 
 	va_start(list, format);
 
 		i = 0;
-		while(format != NULL && format[i] != '\0')
+		while (format != NULL && format[i] != '\0')
 		{
 			switch (format[i])
 			{
@@ -49,6 +47,6 @@ void print_all(const char * const format, ...)
 				printf(", ");
 			i++;
 		}
-		printf("\n");
-		va_end(list);
+	printf("\n");
+	va_end(list);
 }
