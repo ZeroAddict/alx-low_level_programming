@@ -1,5 +1,6 @@
-#include "variadic_functions.h"
 #include <stdarg.h>
+#include "variadic_functions.h"
+#include <stdio.h>
 /**
 * print_strings - print nstrings passed as parameter
 * @separator: is a string in use to separate the printed numbers
@@ -10,6 +11,7 @@
 void print_strings(const char *separator, const unsigned int n, ...)
 {
 	unsigned int i;
+	char *str;
 
 	va_list list;
 
@@ -17,14 +19,19 @@ void print_strings(const char *separator, const unsigned int n, ...)
 
 	for  (i = 0; i < n; i++)
 	{
-		const char *str = va_arg(list, int);
+		str = va_arg(list, char *);
 
-		if(str != NULL) /*if it is not null print sperator*/
-			printf("%d", va_arg(list, int));
-		else if(separator != NULL && i < n - 1)
-			printf("%s", separator);
+		if (str == NULL) /*if it is not null print sperator*/
+		{
+			printf("nil");
+		}
 		else
-			printf("%s %d", separator, va_arg(list, int));
+		{
+			printf("%s", str);
+		}
+		if (i != (n - 1) && separator != NULL)
+			printf("%s", separator);
 	}
+	printf("\n");
 	va_end(list);
 }
