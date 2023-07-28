@@ -7,13 +7,13 @@
  */
 void free_list(list_t *head)
 {
-	list_t *temp;
+	list_t *tempptr;
 
 	while (head)
 	{
-		temp = head->next;
+		tempptr = head->next;
 		free(head->str);
-		free(head);
-		head = temp;
+		free(head); /*frees head pointer that points nxt->str*/
+		head = tempptr;
 	}
 }
