@@ -5,10 +5,11 @@
 * @idx: index of the list where node is inserted
 * Return: the address of node inserted
 */
-listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx[])
+listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 {
 	unsigned int i;
-	listint_t *newnode;
+	/*int m;*/
+	listint_t *newnode, *temp;
 
 	newnode = malloc(sizeof(listint_t));
 	if (newnode == NULL)
@@ -23,8 +24,9 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx[])
 		*head = newnode;
 		return (newnode);
 	}
-	for (i = 0; temp && i < index; i++)
+	for (i = 0; temp && i < idx; i++)
 	{
+		temp = *head;
 		if (i == idx - 1)
 		{
 			newnode->next = temp->next;
