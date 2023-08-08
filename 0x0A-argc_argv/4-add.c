@@ -14,7 +14,6 @@ int main(int argc, char *argv[])
 	int m;
 	int sum;
 	unsigned int n;
-	char *p;
 
 	if (argc < 2)
 		printf("0\n");
@@ -23,17 +22,19 @@ int main(int argc, char *argv[])
 		sum = 0;
 		for (m = 0; m < argc; m++)
 		{
-			p = argv[m];
-			for (n = 0; n < strlen(p); n++)
+			char *arg = argv[m];
+
+			for (n = 0; n < strlen(arg); n++)
 			{
-				if (p[n] < 48 && p[n] > 57)
+				if (arg[n] < '0' && arg[n] > '9')
 				{
+					if (*argv[n] != '0' || *argv[n] != '9')
 					printf("Error\n");
 					return (1);
 				}
 			}
-			sum += atoi(p);
-				p++;
+			sum += atoi(arg);
+				arg++;
 		}
 		printf("%d\n", sum);
 	}
