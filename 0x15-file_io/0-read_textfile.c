@@ -1,33 +1,36 @@
 #include "main.h"
+#include <stdlib.h>
 
 /**
- * create_file - creates file.
- * @filename: ptr to the name of the file.
- * @text_content: ptr to string to write in file.
- *
- * Return: -1 always on fail, 1 if succ
+ * read_textfile - Reads/prints txt to POSIX stdout.
+ * @filename: A ptr to the name (file.)
+ * @letters: The number of letters the func reads/prints.
+ * Return: 0, On failure or NULL file, return ssize_t w/r.
  */
-int create_file(const char *filename, char *text_content)
+ssize_t read_textfile(const char *filename, size_t letters)
 {
-	int o, w_write;
-	int len = 0;
+	char *buff;
+	ssize_t o_filDes, r_read, w_write;
 
 	if (filename == NULL)
-		return (-1);
+		return (0);
 
-	if (!text_content)
+	buff = malloc(sizeof(char) * letters);
+	if (buff == NULL)
+		return (0);
+
+	o_filDes = open(filename, O_RDONLY);
+	r_read = read(o_filDes, buff, letters);
+	w_write = write(STDOUT_FILENO, buff, r_read);
+
+	if (o_filDes == -1 || r_read == -1 || w_write == -1 || w_write != r_read)
 	{
-		while (text_content[len])
-			len++;
+		free(buff);
+		return (0);
 	}
 
-	o = open(filename, O_CREAT | O_RDWR | O_TRUNC, 0600);
-	w_write = write(o, text_content, len);
+	free(buff);
+	close(o_filDes);
 
-	if (o == -1 || w_write == -1)
-		return (-1);
-
-	close(o);
-
-	return (1);
+	return (w_write);
 }
