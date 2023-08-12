@@ -10,13 +10,15 @@
 int create_file(const char *filename, char *text_content)
 {
 	int o, w_write;
-	int len = 0;
+	int len;
 
 	if (filename == NULL)
 		return (-1);
 
-	if (!text_content)
+	if (text_content != NULL)
 	{
+		len = 0;
+
 		while (text_content[len])
 		len++;
 	}
