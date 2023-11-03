@@ -401,4 +401,4 @@ Directory: 0x1A-hash_tables
 File: 6-hash_table_delete.c
 ?   Get a sandbox
 Copyright © 2023 ALX, All rights reserved.
-
+i
