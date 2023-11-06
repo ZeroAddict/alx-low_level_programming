@@ -58,7 +58,7 @@ shash_node_t *set_spair(const char *key, const char *value)
  * Return: the node, or NULL if fails
  */
 shash_node_t *set_spair_only(shash_table_t *ht, const char *key,
-			     const char *value, unsigned long int index)
+		const char *value, unsigned long int index)
 {
 	shash_node_t *node = set_spair(key, value);
 
@@ -96,7 +96,7 @@ int update_value(shash_node_t *node, const char *value)
  * Return: the new node, or NULL if fails
  */
 shash_node_t *set_spair_front(shash_table_t *ht, const char *key,
-			     const char *value, unsigned long int index)
+		const char *value, unsigned long int index)
 {
 	shash_node_t *newnode = set_spair(key, value);
 
@@ -172,7 +172,7 @@ int shash_table_set(shash_table_t *ht, const char *key, const char *value)
 	shash_node_t *node, *curr_old_node;
 
 	if (ht == NULL || key == NULL)
-		return 0;
+		return (0);
 	index = key_index((unsigned char *)key, ht->size);
 	node = ht->array[index];
 	if (node == NULL)
@@ -270,7 +270,7 @@ void shash_table_print_rev(const shash_table_t *ht)
 		printf("'%s': '%s'", node->key, node->value);
 		node = node->sprev;
 		count++;
- 	}
+	}
 	printf("}\n");
 }
 
